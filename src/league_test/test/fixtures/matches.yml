@@ -1,0 +1,64 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  date: 2013-04-15 12:45:34
+  week: 1
+  team_a_id: 1
+  team_b_id: 2
+
+two:
+  id: 2
+  date: 2013-04-15 12:45:34
+  week: 1
+  team_a_id: 3
+  team_b_id: 4
+
+three:
+  id: 3
+  date: 2013-04-15 12:45:34
+  week: 1
+  team_a_id: 5
+  team_b_id: 6
+
+four:
+  id: 4
+  date: 2013-04-15 12:45:34
+  week: 2
+  team_a_id: 1
+  team_b_id: 3
+
+five:
+  id: 5
+  date: 2013-04-15 12:45:34
+  week: 2
+  team_a_id: 2
+  team_b_id: 4
+
+six:
+  id: 6
+  date: 2013-04-15 12:45:34
+  week: 2
+  team_a_id: 3
+  team_b_id: 6
+
+seven:
+  id: 7
+  date: 2013-04-15 12:45:34
+  week: 3
+  team_a_id: 1
+  team_b_id: 4
+
+eight:
+  id: 8
+  date: 2013-04-15 12:45:34
+  week: 3
+  team_a_id: 3
+  team_b_id: 5
+
+nine:
+  id: 9
+  date: 2013-04-15 12:45:34
+  week: 3
+  team_a_id: 2
+  team_b_id: 6

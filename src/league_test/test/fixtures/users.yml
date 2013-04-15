@@ -1,0 +1,22 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  name: user1
+  mail: user1@user1.de
+  password: user1
+  admin: false
+
+two:
+  id: 2
+  name: user2
+  mail: user2@user2.de
+  password: user2
+  admin: false
+
+three:
+  id: 3
+  name: admin
+  mail: admin@admin.de
+  password: admin
+  admin: true

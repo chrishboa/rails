@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+ id: 1
+ name: Werder
+
+two:
+ id: 2
+ name: Dortmund
+
+three:
+ id: 3
+ name: Bayern
+
+four:
+ id: 4
+ name: Herta
+
+five:
+ id: 5
+ name: Mainz
+
+six: 
+ id: 6
+ name: Koeln
