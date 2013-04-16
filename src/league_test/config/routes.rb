@@ -1,7 +1,11 @@
 LeagueTest::Application.routes.draw do
   resources :users
 
-  match "league/teams" => "teams#index"
+  match "teams" => "teams#index"
+
+  get "matches" => "matches#show_all"
+  get "matches/week/:week"  => "matches#show_week"
+  get "matches/week"        => "matches#show_all"
 
 
   # The priority is based upon order of creation:
