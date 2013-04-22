@@ -1,13 +1,28 @@
 class UsersController < ApplicationController
   # GET /users
   # GET /users.json
+  
   def index
-    @users = User.all
+    if user_signed_in? && User.find_by_id(session[:user_id]).admin?
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @users }
+      @users = User.all
+      respond_to do |format|
+        format.html # index.html.erb
+        format.json { render json: @users }
+      end
+    
+    elsif user_signed_in?
+      @user = User.find_by_id(session[:user_id]) 
+      respond_to do |format|
+        format.html { render "user_index"}
+        format.json { render json: @user }
+      end 
+    
+    else 
+      redirect_to login_path
+      
     end
+
   end
 
   # GET /users/1

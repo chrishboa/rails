@@ -5,4 +5,18 @@ class Match < ActiveRecord::Base
 	belongs_to :team_b, class_name: "Team"
 
   attr_accessible :date, :team_a_id, :team_b_id, :week
+
+
+  def hasResult?
+  	!(self).result.nil?
+  end
+
+  def beddingAllowed?
+  	(self).date > Time.now
+  end
+
+  	
+
+
+
 end

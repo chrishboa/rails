@@ -62,3 +62,24 @@ nine:
   week: 3
   team_a_id: 2
   team_b_id: 6
+
+ten:
+  id: 10
+  date: 2013-04-15 12:45:34
+  week: 3
+  team_a_id: 2
+  team_b_id: 1
+
+eleven:
+  id: 11
+  date: 2013-04-15 12:45:34
+  week: 3
+  team_a_id: 4
+  team_b_id: 3
+
+twelve:
+  id: 12
+  date: 2013-04-15 12:45:34
+  week: 3
+  team_a_id: 6
+  team_b_id: 5

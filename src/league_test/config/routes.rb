@@ -1,12 +1,21 @@
 LeagueTest::Application.routes.draw do
-  resources :users
-
+ # resources :users
+  get "league" => "league#index", as: "league"
+  get "login" => "sessions#new", as: "login"
+  resources :users #, only: [:new, :create]
+  post "sessions" => "sessions#create", as: "sessions"
+  delete "sessions" => "sessions#destroy", as: "sessions"
   match "teams" => "teams#index"
 
-  get "matches" => "matches#show_all"
-  get "matches/week/:week"  => "matches#show_week"
-  get "matches/week"        => "matches#show_all"
+  get "matches" => "matches#show_all", as: "matches"
+  get "matches/:week/week"  => "matches#show_week"
 
+  
+  get "matches/week"        => "matches#show_all"
+  #get "bets"  => "bets#show", as: "bets"
+  # post "bets" => "bets#create", as: "bet"
+  # put "bets" => "bets#update", as: "bet"
+  resources :bets
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

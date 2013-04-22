@@ -1,0 +1,32 @@
+
+<div class="bets">
+  <ul>
+  <% @match_bet_a.each do |mb| %>
+    <li>
+    	<% unless mb[:bet].nil? %>
+    		<%= mb[:bet].team_a_goals %> : <%= mb[:bet].team_b_goals %> 
+    	<% else %>
+    		- : - 
+		<% end %>	
+		<% if mb[:bet].nil? 
+				@bet = Bet.new 
+				@bet.user = @current_user
+				@bet.match = mb[:match]
+			else
+				@bet = mb[:bet]
+		end %>
+
+		<% if mb[:match].beddingAllowed? %>
+			<%= form_for @bet do |b| %>
+				<%= b.text_field :team_a_goals, value: "" %>
+				: 
+				<%= b.text_field :team_b_goals , value: "" %>
+				<%= b.hidden_field :match_id %>
+				<%= b.hidden_field :user_id %>
+				<%= b.submit class: "button" %>
+			<% end %>
+		<% end %>
+    </li>
+  <% end %>
+  </ul>
+</div>

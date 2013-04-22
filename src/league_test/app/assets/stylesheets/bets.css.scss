@@ -1,0 +1,24 @@
+// Place all the styles related to the bets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.bets{
+	float: left;
+	
+	.button{
+		width: 100px;
+	}
+	.edit_bet{
+		display: inline;
+	}
+	.new_bet{
+		display: inline-block;
+	}
+	input{
+		width: 25px;
+		margin: 0px 10px;
+	}
+	ul li{
+		height: 30px;
+	}
+}

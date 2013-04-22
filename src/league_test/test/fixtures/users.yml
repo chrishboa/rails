@@ -2,21 +2,15 @@
 
 one:
   id: 1
-  name: user1
-  mail: user1@user1.de
-  password: user1
-  admin: false
+  name: admin
+  mail: admin@admin.com
+  password_digest: $2a$10$xobWSWCzipRG.B3bda0MEeezGSEBUJsWEc3IBpXvo0t0tLzWC2T4q
+  admin: true
 
 two:
   id: 2
-  name: user2
-  mail: user2@user2.de
-  password: user2
+  name: user
+  mail: user@user.de
+  password_digest: $2a$10$SHuTdNTJqTfD.Cv/9G2d5.MfiqGeX1FAJo8GssvSn6Y0YJiTHkKXG
   admin: false
 
-three:
-  id: 3
-  name: admin
-  mail: admin@admin.de
-  password: admin
-  admin: true

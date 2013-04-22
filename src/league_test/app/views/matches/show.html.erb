@@ -1,20 +1,3 @@
 <h1>Matches</h1>
 
-<table>
-  <tr>
-    <th>Team Heim</th>
-    <th>Team Aus</th>
-    <th>Tore</th>
-    <th>Punkte</th>
-  </tr>
-
-<% @matches.each do |match| %>
-
-  <tr>
-    <td><%= match.team_a.name %></td>
-    <td><%= match.team_b.name %></td>
-    <td><%= match.result.team_a_goals %></td>
-    <td><%= match.result.team_b_goals %></td>
-  </tr>
-<% end %>
-</table>
+<%= render partial: "matches", matches: @matches %>

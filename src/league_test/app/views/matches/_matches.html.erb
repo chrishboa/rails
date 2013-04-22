@@ -1,0 +1,11 @@
+<div class="matches" style="float: left">
+  <ul>
+  <% @matches.each do |match| %>
+    <li>
+    	<%= match.team_a.name %> : <%= match.team_b.name %> | 
+    	<%= match.hasResult? ? match.result.team_a_goals : "-" %> : 
+    	<%= match.hasResult? ? match.result.team_b_goals : "-" %>
+    </li>
+  <% end %>
+  </ul>
+</div>
